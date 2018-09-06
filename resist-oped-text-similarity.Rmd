@@ -3,7 +3,7 @@ output:
   github_document
 ---
 
-***THIS IS A DRAFT OF A POST INTENDED FOR A TBD OUTLET**
+***THIS IS A DRAFT OF A POST INTENDED FOR A TBD OUTLET***
 
 # Identifying the author behind New York Time's op-ed from *Inside the Trump White House*, using data science
 
@@ -58,7 +58,7 @@ This exercise is useful for illustrating how it's possible to use data science t
 
 First, the comparison texts are limited because they were designed for Twitter and not the New York Times. They were also authored by users who presumably were okay with their identity being connected to their Tweets (unlike the anonymous author behind the op-ed).
 
-Second, the pool of comparison texts doesn't even represent all of the possible options of people who would fit the description of a *senior official in the Trump administration*. For instance, this omits from consideration any Cabinet member who doesn't have or use Twitter. It also omits anyone who works in the Trump adminstration but who is not an official member of the Cabinet.
+Second, the pool of comparison texts doesn't even represent all of the possible options of people who would fit the description of a *senior official in the Trump administration*. For instance, this omits from consideration any Cabinet member who doesn't have or use Twitter. It also omits anyone who works in the Trump administration but who is not an official member of the Cabinet.
 
 Third, the text similarity analysis assumes the author of the anonymous op-ed didn't try (or failed) to disguise their own communication patterns. Even if they did try to disguise themselves, it's certainly possible that some communication patterns still slipped through the cracks, but it's also possible they provided enough false positives (i.e., "lodestar") that many algorithms would get it wrong. 
 

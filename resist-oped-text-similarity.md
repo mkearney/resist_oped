@@ -1,6 +1,6 @@
 
-\***THIS IS A DRAFT OF A POST INTENDED FOR A TBD
-OUTLET**
+***THIS IS A DRAFT OF A POST INTENDED FOR A TBD
+OUTLET***
 
 # Identifying the author behind New York Time’s op-ed from *Inside the Trump White House*, using data science
 
@@ -160,8 +160,8 @@ Second, the pool of comparison texts doesn’t even represent all of the
 possible options of people who would fit the description of a *senior
 official in the Trump administration*. For instance, this omits from
 consideration any Cabinet member who doesn’t have or use Twitter. It
-also omits anyone who works in the Trump adminstration but who is not an
-official member of the Cabinet.
+also omits anyone who works in the Trump administration but who is not
+an official member of the Cabinet.
 
 Third, the text similarity analysis assumes the author of the anonymous
 op-ed didn’t try (or failed) to disguise their own communication
