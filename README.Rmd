@@ -23,6 +23,19 @@ mat <- readRDS("data/mat.rds")
 
 ## print matrix
 cor(t(mat))[, "op-ed"] %>% sort()
+
+## corrplot
+cormat <- cor(t(mat))
+cormat <- cormat[order(cormat[, "op-ed"]), ]
+colnames(cormat) <- NULL
+cormat <- cormat[23:43, 23:43]
+row.names(cormat) <- paste0(
+	seq_len(nrow(cormat)), ". ", row.names(cormat))
+cols <- c("#0033ee", "#ffeeff", "#cc4444")
+cols <- colorRampPalette(cols)(200)
+par(mar = c(0, 0, 0, 0))
+corrplot::corrplot(cormat, type = "lower", col = cols,
+	tl.pos = "ld", tl.col = "#000000", srt = 0)
 ```
 
 
