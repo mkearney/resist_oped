@@ -14,9 +14,6 @@ cab_tweets <- cab_twits %>%
 	map(get_timeline, n = 3200) %>%
 	bind_rows()
 
-## save data
-saveRDS(cab_tweets, "data/cab_tweets.rds")
-
 ## scrape source code for op-ed
 nyt <- read_html(
 	"https://www.nytimes.com/2018/09/05/opinion/trump-white-house-anonymous-resistance.html")
@@ -36,14 +33,11 @@ data <- data_frame(
 ## feature extraction
 tf <- textfeatures::textfeatures(data, word_dims = 80, threads = 20)
 
-## summarise by author (id)
+## summarise by id
 tfsum <- tf %>%
 	group_by(id) %>%
 	summarise_all(mean, na.rm = TRUE) %>%
 	ungroup()
-
-## save numeric feature data
-saveRDS(tfsum, "data/tfsum.rds")
 
 ## vector of unique authors
 authors <- unique(tfsum$id)
@@ -60,9 +54,6 @@ mat <- cols %>%
 
 ## set row and column names
 row.names(mat) <- authors
-
-## save matrix in data folder
-saveRDS(mat, "data/mat.rds")
 
 ## dipslay matrix
 cor(t(mat))[, "op-ed"] %>% sort()
