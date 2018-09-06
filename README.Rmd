@@ -31,7 +31,7 @@ colnames(cormat) <- NULL
 cormat <- cormat[23:43, 23:43]
 row.names(cormat) <- paste0(
 	seq_len(nrow(cormat)), ". ", row.names(cormat))
-cols <- c("#0033ee", "#ffeeff", "#cc4444")
+cols <- c("#cc4444", "#ffeeff", "#0033ee")
 cols <- colorRampPalette(cols)(200)
 par(mar = c(0, 0, 0, 0))
 corrplot::corrplot(cormat, type = "lower", col = cols,
