@@ -1,6 +1,7 @@
 
-***THIS IS A DRAFT OF A POST INTENDED FOR A TBD
-OUTLET***
+***THIS IS A DRAFT OF A POST INTENDED FOR PUBLICATION BY REYNOLDS
+JOURNALISM
+INSTITUTE***
 
 # Identifying the author behind New York Time’s op-ed from *Inside the Trump White House*, using data science
 
