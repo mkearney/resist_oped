@@ -36,21 +36,8 @@ cor(t(mat))[, "op-ed"] %>% sort()
 #>           POTUS              VP           op-ed 
 #>       0.7986615       0.8010629       1.0000000
 
-## corrplot
-cormat <- cor(t(mat))
-cormat <- cormat[order(cormat[, "op-ed"]), ]
-colnames(cormat) <- NULL
-cormat <- cormat[23:43, 23:43]
-row.names(cormat) <- paste0(
-    seq_len(nrow(cormat)), ". ", row.names(cormat))
-cols <- c("#cc4444", "#ffeeff", "#0033ee")
-cols <- colorRampPalette(cols)(200)
-par(mar = c(0, 0, 0, 0))
-corrplot::corrplot(cormat, type = "lower", col = cols,
-    tl.pos = "ld", tl.col = "#000000", srt = 0)
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
 
 ## Data
 
