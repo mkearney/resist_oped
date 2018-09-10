@@ -23,7 +23,8 @@ which I expect to publish at TBD outlet.
 
 ## Code/Estimates
 
-See the [analysis](R/data-twitter.R) and [visualization](R/plot.R) code.
+See the [analysis](R/01-features.R) (to replicate, btw, start here as
+well) and [visualization](R/02-plot.R) code.
 
 Download the [raw estimates here](estimates.csv) or view the results
 below:
